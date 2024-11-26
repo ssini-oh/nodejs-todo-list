@@ -8,7 +8,7 @@ dotenv.config();
 
 const connect = () => {
   mongoose
-    .connect(process.env.MONGODB_URL, {
+    .connect(process.env.MONGO_URI, {
       dbName: 'todo_memo', // todo_memo 데이터베이스명을 사용합니다.
     })
     .then(() => console.log('MongoDB 연결에 성공하였습니다.'))
